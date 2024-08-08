@@ -1,0 +1,168 @@
+body {
+    background: black; 
+    color: white; 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 40px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    width: 55px;
+    height: auto;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+    opacity: 1; 
+    filter: drop-shadow(1px 1px 10px rgb(255, 255, 255));
+}
+
+
+.navigation a {
+    position: relative;
+    font-size: 1em; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px; 
+    transition: .5s;
+}
+
+a {
+    color: #fff;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: rgb(27, 27, 27);
+}
+
+main {
+    padding-top: 100px;
+}
+
+.welcome {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    color: white;
+    filter: drop-shadow(1px 1px 5px white);
+
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0; 
+}
+
+.link-item {
+    margin: 0 50px;
+}
+
+.link-item img {
+    width: 500px;
+    height: auto;
+}
+
+.about-us {
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; 
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+    filter: drop-shadow(1px 1px 5px white);
+}
+
+.about-us p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.developers {
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.developers h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.developers p {
+    font-size: 1.2em;
+    color: white;
+    transition: 0.2s;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+    transition: transform 0.3s ease; 
+}
+
+.link-item img {
+    width: 200px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+.link-item:hover {
+    transform: scale(1.1); 
+}
+
+.link-item:hover img {
+    transform: scale(1.1); 
+}
+
+footer .social-media a {
+    transition: 0.2s;
+}
+
+footer .social-media a:hover {
+    color: rgb(27, 27, 27);
+}
+
+footer .social-media img {
+    width: 50px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.2);
+}

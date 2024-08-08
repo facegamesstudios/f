@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="imgs/FACE.png">
+    <title>Face Games Roblox</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dela+Gothic+One&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Barlow", sans-serif;
+        }
+
+        body {
+            background: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .logo {
+            width: 55px;
+            height: auto;
+            user-select: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 2s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        .logo:hover {
+            opacity: 1; 
+            filter: drop-shadow(1px 1px 10px rgb(255, 255, 255));
+        }
+        
+        .navigation a {
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 30px;
+            transition: .5s;
+        }
+
+        a {
+            color: #fff;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: rgb(27, 27, 27);
+        }
+
+        main {
+            padding-top: 120px;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .coming-soon {
+            opacity: 0;
+            transition: opacity 1s ease;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .fade-in {
+            opacity: 1;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .link-item {
+            margin: 0 50px; 
+            width: 250px; 
+            height: auto;
+        }
+
+        .link-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #developers {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .developer-item {
+            margin-top: 30px;
+        }
+
+        .developer-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .developer-item h3, .developer-item p {
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .developer-item p {
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        footer {
+            background: rgba(4, 4, 4, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+
+        footer .social-media {
+            margin-bottom: 10px;
+        }
+
+        footer .social-media a {
+            margin: 0 10px;
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .social-media a:hover {
+            color: #272727c0;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            text-align: left; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="FaceGames.html"><img class="logo" src="imgs/FACE.png" alt="Logo"></a>
+        <nav class="navigation">
+            <a href="https://www.roblox.com/groups/34721142/Face-Games#!/about">Roblox Group</a>
+        </nav>
+    </header>
+    <main>
+
+        <section id="coming-soon" class="coming-soon fade-in">
+            <h1>Roblox Games Coming Soon</h1>
+        </section>
+
+        <section id="Projects">
+            <!-- buraya projeler eklenecek -->
+        </section>
+
+        <section id="developers" class="fade-in">
+            <h2>Roblox Game Developers</h2>
+            <div class="developer-item">
+                <h3>Poyraz Face</h3>
+                <p>Founder Of Face Games Roblox</p>
+                <p>Lead Developer/Scripter/UI Maker</p>
+                <p>Github: <a href="https://github.com/Poyrzface">https://github.com/Poyrzface</a></p>
+            </div>
+            <div class="developer-item">
+                <h3>Yağız</h3>
+                <p>Modeller/Animator</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-media">
+                <a href="https://www.youtube.com/channel/UCqszKgtHK8wO4Q68HAvMBzQ"><img src="imgs/Youtube.png" alt="Logo 2" style="width: 50px; height: auto;"></a>
+                <a href="https://github.com/facestudios"><img src="imgs/Github.png" alt="Logo 2" style="width: 50px; height: auto;"></a>
+                <a href="https://discord.gg/Q7G9gEv2kS"><img src="imgs/Discord.png" alt="Logo 2" style="width: 50px; height: auto;"></a>
+            </div>
+            <p>Face Games</p>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('header').style.opacity = '1';
+                document.querySelector('.logo').style.opacity = '1';
+            }, 500);
+
+            setTimeout(function() {
+                document.querySelector('main').style.opacity = '1';
+                document.querySelector('.coming-soon').classList.add('fade-in');
+            }, 1000);
+
+            window.onload = function() {
+                setTimeout(function() {
+                    document.getElementById('coming-soon').scrollIntoView({ behavior: 'smooth' });
+                }, 500); 
+            };
+        });
+    </script>
+</body>
+</html>
